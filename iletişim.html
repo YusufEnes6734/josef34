@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li> <a href="index.html"> Ana Sayfa </a></li>
+                <li> <a href="hakkımda.html">Hakkımda </a></li>
+                <li> <a href="iletişim.html">İletişim </a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h1>İletişim Formu</h1>
+
+            <form>
+                <div>
+                    <label for="adsoyad"> Adınız Soyadınız:</label> <br>
+                    <input type="text" id="adsoyad" name="adsoyad">
+                </div>
+                <br>
+
+                <div>
+                    <label for="eposta">E Posta Adresiniz:</label> <br>
+                    <input type="email" id="eposta" name="eposta">
+                </div>
+                <br>
+
+                <div>
+                    <label for="konu">Konu Seçiniz:</label><br>
+                    <select id="konu" name="konu">
+                        <option value="genel">Hesap Çalınma/Kurtarma</option>
+                        <option value="oneri">Hesap Şifre Değişikliği</option>
+                        <option value="is">Diğer</option>
+                    </select>
+                </div>
+                <br>
+
+                <div>
+                    <label for="mesaj">Mesajınız (En fazla 500 karakter):</label><br>
+                    <textarea id="mesaj" name="mesaj" required maxlength="500" rows="4" cols="30"></textarea>
+                </div>
+                <br>
+
+                <div>
+                    Bize Nasıl Ulaştınız <br>
+                <input type="radio" name="ulaşım" id="arama" value="arama" checked required>
+                <label for="arama"> Arama Motoru </label > 
+
+                <input type="radio" name="ulaşım" id="sosyal" value="sosyal" checked required>
+                <label for="sosyal"> Sosyal Medya </label> 
+                </div>
+                <br>
+                <div>
+                    <label for="tarih">Görüşme Tarihi (Date):</label><br>
+                    <input type="date" id="tarih" name="tarih">
+                </div>
+                <br>
+                <div>
+                    <label for="tarayıcı"> Kullandığınız Tarama</label> <br>
+                <input list="tarayıcılar" name="tarayıcı" id="tarayıcı" placeholder="Arayın Veya Yazın ---" >
+                <datalist id="tarayıcılar" >
+                    <option value="Google Choeme">
+                    <option value="Mozilla Firefox" >
+                    <option value="Microsoft Edge" >
+                    <option value="Opera" >
+                    <option value="Safari">
+                </datalist>
+                </div>
+                <br>
+
+                <div>
+                    <button type="submit">Gönder</button>
+                    <button type="reset">Temizle</button>
+                </div>
+                
+            </form>
+
+        </section>
+    </main>
+</body>
+</html>
